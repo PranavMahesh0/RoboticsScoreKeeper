@@ -1,0 +1,139 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relativeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/numberTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="320dp"
+        android:layout_marginTop="116dp"
+        android:text="Score: 0"
+        android:textSize="30sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/countdownTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="328dp"
+        android:layout_marginTop="24dp"
+        android:text="120"
+        android:textSize="50sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/startButton"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_below="@id/countdownTextView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="264dp"
+        android:layout_marginTop="44dp"
+        android:backgroundTint="@color/green"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/stopButton"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_below="@id/countdownTextView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="448dp"
+        android:layout_marginTop="44dp"
+        android:backgroundTint="@color/red"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/incrementButton10"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:layout_below="@id/numberTextView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="264dp"
+        android:layout_marginTop="36dp"
+        android:background="@drawable/button_background"
+        android:text="+10"
+        android:textSize="9sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/numberTextView" />
+
+    <Button
+        android:id="@+id/incrementButton5"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:layout_below="@id/numberTextView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="340dp"
+        android:layout_marginTop="36dp"
+        android:background="@drawable/button_background"
+        android:text="+5"
+        android:textSize="9sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/numberTextView" />
+
+    <Button
+        android:id="@+id/incrementButton1"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:layout_below="@id/numberTextView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="416dp"
+        android:layout_marginTop="36dp"
+        android:background="@drawable/button_background"
+        android:text="+1"
+        android:textSize="9sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/numberTextView" />
+
+    <Button
+        android:id="@+id/decrementButton10"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:layout_below="@id/numberTextView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="264dp"
+        android:layout_marginTop="116dp"
+        android:background="@drawable/button_background"
+        android:text="-10"
+        android:textSize="9sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/numberTextView" />
+
+    <Button
+        android:id="@+id/decrementButton5"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:layout_below="@id/numberTextView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="340dp"
+        android:layout_marginTop="116dp"
+        android:background="@drawable/button_background"
+        android:text="-5"
+        android:textSize="9sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/numberTextView" />
+
+    <Button
+        android:id="@+id/decrementButton1"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:layout_below="@id/numberTextView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="416dp"
+        android:layout_marginTop="116dp"
+        android:background="@drawable/button_background"
+        android:text="-1"
+        android:textSize="9sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/numberTextView" />
+</androidx.constraintlayout.widget.ConstraintLayout>
